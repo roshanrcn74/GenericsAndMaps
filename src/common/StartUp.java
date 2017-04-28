@@ -5,6 +5,7 @@
  */
 package common;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -76,6 +77,11 @@ public class StartUp {
             System.out.println("Key : " + key1 + " :" + treeMapMovie.get(key1));
         }        
         
+        System.out.println("\n===================Move List====================\n");
+        Collection<Movie> values = treeMapMovie.values();
+        for (Movie movie : values){
+            System.out.println("Move : " + movie.toString());
+        }     
     }
     
 }

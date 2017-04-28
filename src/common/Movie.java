@@ -55,10 +55,8 @@ public class Movie  implements Comparable{
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 23 * hash + Objects.hashCode(this.movieId);
-        hash = 23 * hash + Objects.hashCode(this.title);
-        hash = 23 * hash + Objects.hashCode(this.series);
+        int hash = 5;
+        hash = 79 * hash + Objects.hashCode(this.movieId);
         return hash;
     }
 
@@ -75,12 +73,6 @@ public class Movie  implements Comparable{
         }
         final Movie other = (Movie) obj;
         if (!Objects.equals(this.movieId, other.movieId)) {
-            return false;
-        }
-        if (!Objects.equals(this.title, other.title)) {
-            return false;
-        }
-        if (!Objects.equals(this.series, other.series)) {
             return false;
         }
         return true;
